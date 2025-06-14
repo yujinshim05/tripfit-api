@@ -1,17 +1,10 @@
 # tripfit API (백엔드)
 
-이 프로젝트는 여행지를 입력하면 AI가 추천 옷차림을 알려주는  
+이 프로젝트는 여행지와 여행 날짜를  입력하면 AI가 추천 옷차림을 알려주는  
 **프론트엔드 앱(tripfit)**의 백엔드 서버입니다.
 
 Google Gemini API를 기반으로 사용자의 여행지, 출발일, 도착일 정보를 받아  
 해당 기간에 적절한 의류 스타일을 추천합니다.
-
----
-
-## 🔗 배포 주소 (Vercel)
-
-👉 [https://assign2-yujinshim05-yujinshims-projects.vercel.app/api/duksungAI](https://assign2-yujinshim05-yujinshims-projects.vercel.app/api/duksungAI)
-
 
 ---
 
