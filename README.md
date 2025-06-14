@@ -10,7 +10,8 @@ Google Gemini API를 기반으로 사용자의 여행지, 출발일, 도착일 �
 
 ## 🔗 배포 주소 (Vercel)
 
-👉 [https://assign2-68yb5gubl-yujins-projects-24ecc15d.vercel.app/api/duksungAI](https://assign2-68yb5gubl-yujins-projects-24ecc15d.vercel.app/api/duksungAI)
+👉 [https://assign2-yujinshim05-yujinshims-projects.vercel.app/api/duksungAI](https://assign2-yujinshim05-yujinshims-projects.vercel.app/api/duksungAI)
+
 
 ---
 
