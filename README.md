@@ -12,12 +12,15 @@ Google Gemini API를 기반으로 사용자의 여행지, 출발일, 도착일 �
 
 AI 추천을 위한 단일 POST API입니다.  
 사용자가 여행할 국가(또는 도시), 출발일, 도착일을 입력하면  
-해당 기간의 옷차림을 Google Gemini API를 통해 추천받습니다.
+Google Gemini API를 통해 **해당 기간에 적합한 옷차림**을 추천합니다.
 
-### Endpoint
+### 📌 Endpoint
+
+```
 POST /api/duksungAI
+```
 
-이 경로로 요청하면 Gemini AI가 생성한 추천 문장을 반환합니다.
+이 경로로 요청하면, **Gemini AI가 생성한 옷차림 추천 문장**을 반환합니다.
 
 ---
 
