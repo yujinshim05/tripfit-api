@@ -1,0 +1,66 @@
+# tripfit API (백엔드)
+
+이 프로젝트는 여행지를 입력하면 AI가 추천 옷차림을 알려주는  
+**프론트엔드 앱(tripfit)**의 백엔드 서버입니다.
+
+Google Gemini API를 기반으로 사용자의 여행지, 출발일, 도착일 정보를 받아  
+해당 기간에 적절한 의류 스타일을 추천합니다.
+
+---
+
+## 🔗 배포 주소 (Vercel)
+
+👉 [https://assign2-68yb5gubl-yujins-projects-24ecc15d.vercel.app/api/duksungAI](https://assign2-68yb5gubl-yujins-projects-24ecc15d.vercel.app/api/duksungAI)
+
+---
+
+## 📮 API 설명
+
+AI 추천을 위한 단일 POST API입니다.  
+사용자가 여행할 국가(또는 도시), 출발일, 도착일을 입력하면  
+해당 기간의 옷차림을 Google Gemini API를 통해 추천받습니다.
+
+### Endpoint
+POST /api/duksungAI
+
+이 경로로 요청하면 Gemini AI가 생성한 추천 문장을 반환합니다.
+
+---
+
+### 📤 요청 형식 (Request Body)
+
+요청은 아래와 같이 세 개의 필드를 포함하는 JSON 형식입니다:
+
+| 필드명     | 타입   | 설명                        |
+|------------|--------|-----------------------------|
+| `location` | string | 여행할 국가 또는 도시명     |
+| `startDate`| string | 여행 출발일 (YYYY-MM-DD)    |
+| `endDate`  | string | 여행 도착일 (YYYY-MM-DD)    |
+
+예시:
+
+```json
+{
+  "location": "후쿠오카",
+  "startDate": "2025-06-20",
+  "endDate": "2025-06-24"
+}
+```
+
+---
+
+### 📥 응답 형식 (Response Body)
+
+요청에 성공하면 다음과 같은 형식의 JSON 응답을 받습니다:
+
+| 필드명 | 타입   | 설명 |
+|--------|--------|------|
+| `answer` | string | Gemini AI가 생성한 추천 옷차림 문장입니다. 사용자의 여행지와 기간에 따라 달라집니다. |
+
+예시:
+
+```json
+{
+  "answer": "6월 20일~24일 후쿠오카 여행에서는 낮에는 반팔과 얇은 바지를, 저녁에는 가벼운 겉옷을 챙기세요."
+}
+```
